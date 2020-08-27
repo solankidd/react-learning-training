@@ -1,11 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Header from './components/header/Header'
 
 const employees = [{ id: 1, name: 'John', desig: 'SE', salary: 10000 }, { id: 2, name: 'Doe', desig: 'SSE', salary: 15000 }];
 function App() {
   return (
     <div className="App">
+      <Header/>
       <table className="emp-table">
         <tr>
           <th>Name</th>
