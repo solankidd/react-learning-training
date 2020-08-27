@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.App .emp-table td, .App .emp-table th{
+  border:1px solid;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
