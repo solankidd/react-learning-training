@@ -69,6 +69,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 
 Notes:
+Main commands:
+npm install create-react-app
+create-react-app my-app
+
 to add scss:
 npm install node-sass --save
 to add bootstrap:
