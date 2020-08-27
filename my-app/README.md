@@ -71,3 +71,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 Notes:
 to add scss:
 npm install node-sass --save
+to add bootstrap:
+npm install --save bootstrap (https://create-react-app.dev/docs/adding-bootstrap/)
