@@ -73,6 +73,7 @@ Main commands:
 npm install create-react-app
 create-react-app my-app
 
+
 to add scss:
 npm install node-sass --save
 to add bootstrap:
