@@ -1,10 +1,11 @@
 import React from 'react';
-import './Header.scss';
+import PropTypes from 'prop-types';
+import './header.scss';
 
-const Header= ()=> {
+const Header = (props) => {
     return (
         <header className="main-header">
-            Cybage
+            {props.heading.mainText} - <span className="sub-text">{props.heading.subText}</span>
         </header>
     )
 }
