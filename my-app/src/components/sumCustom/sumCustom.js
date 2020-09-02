@@ -20,9 +20,3 @@ const myPropTypes = {
     sal: PropTypes.number,
     variable: PropTypes.number
 }
-
-/* 
-Sum.propTypes = {
-    a: PropTypes.number.isRequired,
-    b: PropTypes.number.isRequired
-} */
