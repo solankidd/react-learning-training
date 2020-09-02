@@ -1,12 +1,11 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import './employeesList.scss';
 import SumCustom from '../sumCustom/sumCustom';
 import Sum from '../sum/sum';
-import AddEmployee from '../addEmployee/addEmployee'
+import Webapi from '../webAPI/webAPI';
 
 class EmployeesList extends React.Component {
-
-
 
     constructor() {
         super();
@@ -38,7 +37,7 @@ class EmployeesList extends React.Component {
     render() {
         return (
             <div className="container">
-                <AddEmployee />
+                <Webapi></Webapi>
                 <table className="table employee-table">
                     <thead>
                         <tr>
@@ -64,7 +63,7 @@ function renderTableHeader() {
 function renderTableData() {
     return this.state.Employees.map((emp) => (
         <tr key={emp.empId}>
-            <td>{emp.empId}</td>
+            <td>{emp.empId} <Link to={`/employeedetail/${emp.empId}/${emp.name}`}>Employee Detail</Link></td>
             <td>{emp.name}</td>
             <td>{emp.desig}</td>
             <td>

@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './App.scss';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
-import EmployeesList from './components/employeesList/employeesList.js';
+import MyRoutes from './components/myRoutes/myRoutes';
 
 function App() {
   const header = {
@@ -13,9 +13,10 @@ function App() {
   }
   return (
     <div className="App">
-
       <Header heading={header}></Header>
-      <EmployeesList />
+      <div className="container">
+        <MyRoutes></MyRoutes>
+      </div>
       <Footer message="Main footer"></Footer>
     </div>
   );
